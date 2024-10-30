@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/Daftar.css" />
+    <title>Wilify</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav_logo"> Wilify </a>
+
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="index.html" class="nav_link">Halaman Utama</a>
+            </li>
+
+            <li class="nav_item">
+              <a href="Songs.html" class="nav_link">Lagu</a>
+            </li>
+
+            <li class="nav_item">
+              <a href="About.html" class="nav_link">Tentang Kami</a>
+            </li>
+
+            <li class="nav_item">
+              <a href="Daftar.html" class="nav_link active-link">Daftar</a>
+            </li>
+          </ul>
+
+          <!-- Button penutup -->
+          <div class="nav_close" id="nav-close">
+            <img src="./assets/Icon/close-line.png" alt="" />
+          </div>
+        </div>
+
+        <!-- Humbberger menu -->
+        <div class="nav_toggle" id="nav-toggle">
+          <img src="./assets/Icon/menu-line.png" alt="" />
+        </div>
+      </nav>
+    </header>
+    <br>
+    <br>
+    <div class="Regis container">
+        <h2>Registration Form</h2>
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <span id="nameError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span id="emailError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <span id="passwordError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1" required>
+                <span id="ageError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <span id="genderError" class="error"></span>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+            
+
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
